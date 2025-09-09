@@ -67,26 +67,26 @@ dive
 
 ## 5. Keybinding (optional)
 
-Zsh:
+# Zsh:
 
 ```bash
 echo "bindkey -s 'YOURKEY' '~/.local/bin/dive\n'" >> ~/.zshrc
 ```
 
-# for example:
+for example:
 
 ```bash
 echo "bindkey -s '^f' '~/.local/bin/dive\n'" >> ~/.zshrc
 # bind ctrl+f to run dive
 ```
 
-Bash:
+# Bash:
 
 ```bash
 echo "bind -x '"YOURKEY":"~/.local/bin/dive"'" >> ~/.bashrc
 ```
 
-# for example:
+for example:
 
 ```bash
 echo "bind -x '"\C-f":"~/.local/bin/dive"'" >> ~/.bashrc
