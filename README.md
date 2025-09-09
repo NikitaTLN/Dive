@@ -14,8 +14,10 @@
 ---
 
 ## 1. Install Requirements
+ 
 
 Arch Linux:
+
 ```bash
 sudo pacman -S fzf neovim
 
