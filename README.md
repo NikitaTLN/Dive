@@ -2,7 +2,7 @@
 
 ### `dive/README.md`
 ```markdown```
-# dive 🐋
+# dive 
 
 **dive** is a lightweight fuzzy finder helper that lets you quickly navigate into project directories and open them in [Neovim](https://neovim.io).
 
@@ -42,10 +42,10 @@ mv dive ~/.local/bin/
 ```
 ---
 
-## 3. Add to you PATH (optional)
+## 3. Add to your PATH (optional)
 
 Zsh:
-```zsh
+```bash
 echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.zshrc 
 source ~/.zshrc
 ```
@@ -69,25 +69,26 @@ dive
 
 Zsh:
 
-```zsh
-nvim ~/.zshrc
+```bash
+echo "bindkey -s 'YOURKEY' '~/.local/bin/dive\n'" >> ~/.zshrc
 ```
-# Add this line to the file:
-bindkey -s 'YOURKEY' '~/.local/bin/dive\n'
 
-# for example 
+# for example:
 
-bindkey -s '^f' '~/.local/bin/dive\n'
+```bash
+echo "bindkey -s '^f' '~/.local/bin/dive\n'" >> ~/.zshrc
+# bind ctrl+f to run dive
+```
 
 Bash:
 
 ```bash
-nvim ~/.bashrc
+echo "bind -x '"YOURKEY":"~/.local/bin/dive"'" >> ~/.bashrc
 ```
-# Add this line to the file:
-
-bind -x '"YOURKEY":"~/.local/bin/dive"'
 
 # for example:
 
-bind -x '"\C-f":"~/.local/bin/dive"'
+```bash
+echo "bind -x '"\C-f":"~/.local/bin/dive"'" >> ~/.bashrc
+# bind ctrl+f to run dive
+```
